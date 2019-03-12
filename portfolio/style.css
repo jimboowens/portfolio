@@ -64,7 +64,7 @@ background-image:url('./images/background2.png');
   margin-left:-15px;
 }
 
-#project-page-1{
+#project-page{
 background-image:url('./images/background.png');
   /* Full width */
   width:100vw; 
@@ -76,7 +76,7 @@ background-image:url('./images/background.png');
   margin-left:-15px;
 }
 
-#project-page-2{
+#comment-page{
 background-image:url('./images/background2.png');
   /* Full width */
   width:100vw; 
@@ -110,4 +110,10 @@ background-image:url('./images/background2.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin-left:-15px;
+}
+
+.projectPage {
+  margin-bottom: 2vw;
+  text-align: center;
+  font-family: 'Fascinate Inline', cursive;
 }
