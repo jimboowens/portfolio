@@ -117,3 +117,7 @@ background-image:url('./images/background2.png');
   text-align: center;
   font-family: 'Fascinate Inline', cursive;
 }
+
+.text-center{
+  text-align:center;
+}
