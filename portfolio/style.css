@@ -8,6 +8,7 @@ font-family: 'Helvetica';
 }
 
 h1{
+  margin-top:-5vw;
   font-size: 5vw;
   letter-spacing: 2px;
   font-family: 'Simplifica';
@@ -16,6 +17,7 @@ h1{
 }
 
 h2{
+  margin-top:-.45vw;
   font-size: 3vw;
   letter-spacing: 1px;
   font-family: 'Simplifica';
@@ -33,7 +35,6 @@ h3{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 #project-page, #comment-page, #final-page{
@@ -58,6 +59,16 @@ h3{
   border-right: none !important;
 }
 
+.projectImages a{
+  text-decoration: none;
+  color:black;
+  padding: 0 1vw;
+  border-right: none !important;
+  font-size:3vw; font-size: 3vw;
+  letter-spacing: 1px;
+  font-family: 'Simplifica';
+}
+
 .projectImages{
   display:flex;
   justify-content:space-around;
@@ -80,10 +91,19 @@ h3{
   justify-content: center;
   margin: 1vw;
   font-size:3vw;
+  min-width: 3vw;
+}
+
+.devicon1{
+  width:5vw;
 }
 
 .skills i{
   margin:1vw;
+}
+
+.research{
+  margin-top:4vw;
 }
 
 .projectPage {
