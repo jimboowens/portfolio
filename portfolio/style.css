@@ -3,113 +3,87 @@ font-family: 'Helvetica';
 }
 
 @font-face {
-    font-family:"Simplifica";
-    src: url("./Simplifica.ttf") format("truetype");
-  }
-
-#splash-page{
-background-image:url('./images/background.png');
-  /* Full width */
-  width:100vw; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* margin-left:-15px; */
+  font-family:"Simplifica";
+  src: url("./Simplifica.ttf") format("truetype");
 }
 
 h1{
-    font-size: 5vw;
-    letter-spacing: 2px;
-    font-family: 'Simplifica';
+  font-size: 5vw;
+  letter-spacing: 2px;
+  font-family: 'Simplifica';
+  text-align:center;
+  text-decoration:underline;
 }
 
 h2{
-    font-size: 3vw;
-    letter-spacing: 1px;
-    font-family: 'Simplifica';
+  font-size: 3vw;
+  letter-spacing: 1px;
+  font-family: 'Simplifica';
 }
 
 h3{
-    font-size: 2vw;
-    letter-spacing: 1px;
-    font-family: "Simplifica";
+  font-size: 2vw;
+  letter-spacing: 1px;
+  font-family: "Simplifica";
 }
 
-a, a:hover{
-    text-decoration: none;
-    color:black;
-    padding: 0 1vw;
-    border-right: 2px solid black;
-}
-
-a #email{
-    text-decoration: none;
-    color:black;
-    padding: 0 1vw;
-    border-right: none !important;
-}
-
-
-#main-page{
-background-image:url('./images/background2.png');
-  /* Full width */
+#splash-page, #skills-page, #resume-page{
+  background-image:url('./images/background.png');
   width:100vw; 
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left:15px; 
+
 }
 
-#project-page{
-background-image:url('./images/background.png');
-  /* Full width */
+#project-page, #comment-page, #final-page{
+  background-image:url('./images/background2.png');
   width:100vw; 
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left:15px; 
 }
 
-#comment-page{
-background-image:url('./images/background2.png');
-  /* Full width */
-  width:100vw; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left:15px;
+#splash-page a, a:hover{
+  text-decoration: none;
+  color:black;
+  padding: 0 1vw;
+  border-right: 2px solid black;
 }
 
-#resume-page{
-background-image:url('./images/background.png');
-  /* Full width */
-  width:100vw; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left:15px;
+#email a{
+  text-decoration: none;
+  color:black;
+  padding: 0 1vw;
+  border-right: none !important;
 }
 
-#final-page{
-background-image:url('./images/background2.png');    
-  /* Full width */
-  width:100vw; 
+.projectImages{
+  display:flex;
+  justify-content:space-around;
+  align-items:flex-start;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left:15px;
+.projectImages img{
+  width: 25vw;
+}
+
+#project-page img:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(2);
+}
+
+.skills, .devicon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw;
+  font-size:3vw;
+}
+
+.skills i{
+  margin:1vw;
 }
 
 .projectPage {
