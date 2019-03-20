@@ -7,6 +7,11 @@ font-family: 'Helvetica';
   src: url("./Simplifica.ttf") format("truetype");
 }
 
+a, a:hover{
+  text-decoration:none;
+  color:black;
+}
+
 h1{
   margin-top:-10vw;
   font-size: 5vw;
@@ -14,7 +19,6 @@ h1{
   font-family: 'Simplifica';
   text-align:center;
   text-decoration:underline;
-  border-right:none !important;
 }
 
 h2{
@@ -36,7 +40,7 @@ p{
   font-family: 'Simplifica';
 }
 
-#splash-page, #skills-page, #final-page{
+#splash-page, #skills-page{
   background-image:url('./images/background.png');
   width:100vw; 
   height:30vh;
@@ -45,7 +49,7 @@ p{
   background-size: cover;
 }
 
-#project-page, #working-page{
+#project-page, #final-page{
   background-image:url('./images/background2.png');
   width:100vw; 
   height:30vh;
@@ -54,9 +58,7 @@ p{
   background-size: cover;
 }
 
-#splash-page a, a:hover{
-  text-decoration: none;
-  color:black;
+#span-splash-page a, a:hover{
   padding: 0 1vw;
   border-right: 2px solid black;
 }
@@ -69,10 +71,7 @@ p{
 }
 
 .projectImages a{
-  text-decoration: none;
-  color:black;
   padding: 0 1vw;
-  border-right: none !important;
   font-size:3vw; font-size: 3vw;
   letter-spacing: 1px;
   font-family: 'Simplifica';
@@ -96,21 +95,11 @@ p{
 .skills, .devicon{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
   font-size:3vw;
-  min-width: 3vw;
+  min-width: 20px;
 }
-
-.aboutMe{
-  display: flex;
-  flex-direction: row;
-  align-items: space-around;
-  justify-content: center;
-  font-size:3vw;
-  min-width: 3vw;
-}
-
 .devicon1{
   width:5vw;
 }
@@ -123,10 +112,6 @@ p{
   margin:1vw;
 }
 
-.research{
-  margin-top:4vw;
-}
-
 .projectPage {
   margin-bottom: 2vw;
   text-align: center;
@@ -134,10 +119,23 @@ p{
 }
 
 #final-page a, a:hover{
-  text-decoration: none;
-  color:black;
   padding: 0 1vw;
   border-right: 2px solid black;
+}
+
+.aboutMe{
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: center;
+  font-size:3vw;
+  min-width: 3vw;
+  padding-left: 5vw;
+  padding-right:5vw;
+}
+
+.aboutMe p{
+  margin-right:7vw;
 }
 
 .text-center{
