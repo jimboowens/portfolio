@@ -38,7 +38,6 @@ p{
   font-size:20px;
   letter-spacing: 1px;
   font-family: 'Simplifica';
-  max-width:640px;
 }
 
 #splash-page, #skills-page{
@@ -105,7 +104,7 @@ p{
 }
 
 .projectImages p{
-  max-width:250px;
+  max-width:475px;
   text-align:center;
 }
 
