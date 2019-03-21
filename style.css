@@ -79,12 +79,35 @@ p{
 
 .projectImages{
   display:flex;
+  flex-wrap:wrap;
   justify-content:space-around;
   align-items:flex-start;
 }
 
+.projectTitles{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:flex-start;
+}
+
+.projectDescriptions{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  text-align:center;
+}
+
 .projectImages img{
   width: 25vw;
+  min-width:250px;
+}
+
+.projectImages p{
+  max-width:250px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 #project-page img:hover{
@@ -92,21 +115,86 @@ p{
   transform: scale(1.2);
 }
 
-.skills, .devicon{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  font-size:3vw;
-  min-width: 20px;
+@media (max-width:639px){
+  .skills, .devicon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size:20px;
+    min-width: 20px;
+    flex-wrap:wrap;
+  }
+
+  h1{
+    margin-top:5vh;
+  }
+
+  .aboutMeText{
+    margin-left:3vw;
+    margin-right:3vw;
+  }
 }
-.devicon1{
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .skills, .devicon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size:35px;
+    min-width: 20px;
+  }
+
+  .aboutMe h1{
+    margin-top:5vh;
+  }
+
+  .aboutMeText{
+    margin-left:10vw;
+    margin-right:10vw;
+  }
+}
+@media (max-width: 1024px) and (min-width: 960px) and (max-height: 768px) and (min-height: 692px) {
+  .skills, .devicon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size:3vw;
+    min-width: 20px;
+  }
+
+  .aboutMeText{
+    margin-left:20vw;
+    margin-right:20vw;
+  }
+
+}
+@media (min-width: 1024px){
+  .skills, .devicon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size:35px;
+    min-width: 20px;
+  }
+
+  .aboutMe h1{
+    margin-top:5vh;
+  }
+
+}
+
+/* .devicon1{
   width:5vw;
+  margin-bottom:14px;
 }
 
 .devicon2{
   width:3.5vw;
-}
+} */
 
 .skills i{
   margin:1vw;
@@ -125,6 +213,7 @@ p{
 
 .aboutMe{
   display: flex;
+  flex-wrap:wrap;
   flex-direction: row;
   align-items: space-around;
   justify-content: center;
@@ -134,8 +223,21 @@ p{
   padding-right:5vw;
 }
 
-.aboutMe p{
-  margin-right:7vw;
+
+
+.aboutMe img{
+  display:inline-block;
+  margin-top:1vh;
+  max-width:15vw;
+  border-radius:1.5vw; 
+  position: relative; 
+  left: 50%; 
+  transform: translate(-50%);
+}
+
+.aboutMe img:hover{
+  transition: all 1s ease-in-out;
+  transform: scale(1.5);
 }
 
 .text-center{
